@@ -22,7 +22,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Build Application and Run unit Test
-        run: python app.py & pytest    
+        run: python main.py  
    continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
