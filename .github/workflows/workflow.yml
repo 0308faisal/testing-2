@@ -18,9 +18,9 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id:AKIA26QSWTZNAIFK4D54
-          aws-secret-access-key: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
-          aws-region:us-east-1
+          aws-access-key-id:"AKIA26QSWTZNAIFK4D54"
+          aws-secret-access-key:"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"
+          aws-region:"us-east-1"
    continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
